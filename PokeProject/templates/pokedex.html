@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PokeDex!</title>
+    <link rel="stylesheet" href="/static/pokestyle.css">
+    <link rel="stylesheet" href="/static/tipostyle.css">
+    <link rel="shortcut icon" href="/static/pokebola.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div class='pokedex'>
+    <img src='/static/pokedexboa.png' class='pokesearch'>
+    <img class='pokeresult' src='{{ poke_image }}'>
+    <span class='idpoke'>{{ poke_id }}</span>
+    <form action="{{ url_for('index') }}" method="post">
+      <button class='ok' type="submit"></button>
+      <input class='search' name='pokename' required>
+    </form>
+    <span class='infa'>Height:{{poke_altura}}</span>
+    <span class='infp'>Weight:{{poke_peso}}</span>
+    <div class='tipos'>
+      {% for i in poke_tipos %}
+        <span class="{{i['type']['name']}}">{{ i['type']['name'].upper() }}</span>
+      {% endfor %}
+    </div>
+    </div>
+  </body>
+</html>

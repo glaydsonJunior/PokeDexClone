@@ -1,0 +1,56 @@
+.pokesearch{
+  width:720px;
+}
+.ok{
+  width:68px;
+  height:66px;
+  border-radius:100%;
+  background-color:yellow;
+  position:relative;
+  bottom:190px;
+  left:253px;
+}
+.search{
+  position:relative;
+  bottom:213px;
+  width:165px;
+  height:67px;
+  right: 20px;
+  font-size: 20px;
+  background-color:#66985e;
+}
+.pokeresult{
+  width:165px;
+  position:relative;
+  right:615px;
+  bottom:323px;
+}
+.idpoke{
+  position:relative;
+  bottom:485px;
+  right:810px;
+}
+.pokedex{
+  position: relative;
+  left:440px;
+}
+body{
+  background-image: url("https://cdn.wallpapersafari.com/89/48/Ph6EHu.png");
+  width: 1000px;
+}
+
+
+.infp{
+  position: relative;
+  left: 485px;
+  bottom: 310px;
+  color: white;
+  font-size: 20px;
+}
+.infa{
+  position: relative;
+  left: 407px;
+  bottom: 310px;
+  color: white;
+  font-size: 20px;
+}
