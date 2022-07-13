@@ -2,6 +2,7 @@ import requests
 class Poketest:
     def __init__(self,nome):
         self.nome = nome
+        #Requisição pra pokeapi
         self.reqi = requests.get(f'https://pokeapi.co/api/v2/pokemon/{self.nome}')
         reqi_json = self.reqi.json()
 
